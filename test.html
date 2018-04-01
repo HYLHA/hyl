@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+<script type="text/javascript">
+
+//相加
+function add(){
+var first=0;
+jai=Number(document.getElementById("text").value);
+
+var scoent=0;
+jia=Number(document.getElementById("text2").value);
+
+var sum=0;
+sum=jai+jia;
+document.getElementById("jieg").value=sum;
+}
+
+//相减
+function delect(){
+
+var jian=0;
+jian=jai-jia;
+document.getElementById("jieg").value=jian;
+}
+
+//相乘
+
+function chen(){
+
+var ce=0;
+ce=jai*jia;
+document.getElementById("jieg").value=ce;
+}
+
+//相除
+
+function chu(){
+
+var cu=0;
+cu=jai/jia;
+document.getElementById("jieg").value=cu;
+}
+
+
+
+
+
+</script>
+
+
+
+ </head>
+ <body>
+  <table style="background:yellow">
+  <tr>
+  <td colspan="4" align="center">购物简易计算器</td>
+ 
+  
+  </tr>
+
+    <tr>
+      <td>第一个数</td>
+    <td colspan="3"><input type="text" id="text"></td>
+     
+    </tr>
+
+
+      <tr>
+        <td>第二个数</td>
+    <td colspan="3"><input type="text" id="text2"></td>
+     
+      </tr>
+
+
+        <tr>
+        
+          <td><input type="submit" value="+" style="width:100% " onclick="add()"></td>
+          <td><input type="submit" value="—" style="width:100% " onclick="delect()"></td>
+          <td><input type="submit" value="X" style="width:100% " onclick="chen()"></td>
+          <td><input type="submit" value="/" style="width:100% " onclick="chu()"></td>
+        </tr>
+
+
+          <tr>
+            <td>计算结果</td>
+    <td colspan="3"><input type="text" id="jieg" /></td>
+      
+          
+          </tr>
+  
+  
+  </table>
+
+
+
+ </body>
+</html>
